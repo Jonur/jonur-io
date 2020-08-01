@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #005a7e
+    linear-gradient(to left top, #296073, #005a7e, #005289, #0b478e, #3c378c);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 2rem 2rem 1rem;
+}
+
+.header-h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.header-h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.header-h3 {
+  font-weight: 300;
+  font-size: 1.175rem;
+}
+
+.main {
+  padding: 1rem 2rem 2rem;
+}
+
+.main .profile-link {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main .profile-link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.main .profile-link:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  flex-basis: 30px;
+  margin-right: 0.5rem;
+}
+
+.linkedin:before {
+  background: url("/images/li.png") no-repeat;
+  background-size: 25px auto;
+}
+
+.github:before {
+  background: url("/images/github.png") no-repeat;
+  background-size: 25px auto;
+}
+
+.stack-overflow:before {
+  background: url("/images/so.png") no-repeat;
+  background-size: 25px auto;
+}
+
+.instagram:before {
+  background: url("/images/ig.png") no-repeat;
+  background-size: 25px auto;
+}
+
+.footer {
+  font-size: 0.75rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    align-items: center;
+  }
+
+  .header,
+  .main {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .main .profile-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
