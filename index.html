@@ -51,16 +51,14 @@
       >
         Community contribution
       </a>
-
-      <a
-        href="https://instagram.com/ddamilos"
-        class="profile-link instagram"
-        title="Follow me on Instagram"
-      >
-        Social networking
-      </a>
     </main>
 
-    <footer class="footer">&copy;2020 Dimitris Damilos</footer>
+    <footer class="footer" id="footer"></footer>
   </body>
+
+  <script>
+    const footer = document.getElementById("footer");
+    const now = (new Date()).getFullYear();
+    footer.innerHTML = `&copy;${now} Dimitris Damilos`;
+  </script>
 </html>

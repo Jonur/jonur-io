@@ -82,11 +82,6 @@ body {
   background-size: 25px auto;
 }
 
-.instagram:before {
-  background: url("/images/ig.png") no-repeat;
-  background-size: 25px auto;
-}
-
 .footer {
   font-size: 0.75rem;
   height: 2.5rem;
